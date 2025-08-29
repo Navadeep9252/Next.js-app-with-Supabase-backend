@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Event RSVP Application
 
-## Getting Started
+This project is a minimal, full-stack application designed to manage and track event RSVPs. It serves as a proof of concept for building data-driven applications using a modern serverless stack. The application allows users to view a list of upcoming events and submit their RSVP status (Yes/No/Maybe) to each.
 
-First, run the development server:
+### Technical Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*   **Frontend:** Next.js (App Router) with React
+*   **Styling:** Tailwind CSS
+*   **Backend:** Supabase (Database & API)
+*   **Deployment:** Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   **Dynamic Event Listing:** Fetches and displays a list of upcoming events from a Supabase database.
+*   **Event-Specific Pages:** Each event has a dedicated page for viewing details and submitting an RSVP.
+*   **RSVP Functionality:** Users can select their attendance status, which is recorded in the Supabase database.
+*   **Serverless Architecture:** Utilizes Next.js Server Components and Server Actions for efficient data fetching and manipulation, minimizing client-side overhead.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git)
+    cd YOUR_REPO_NAME
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.  Set up your Supabase project as follows:
+    *   Create a new project in the Supabase Dashboard.
+    *   Run the provided SQL scripts to create the `events` and `rsvps` tables.
+    *   Configure Row Level Security (RLS) policies to ensure data is secure.
+    *   Populate the `events` table with sample data.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4.  Configure environment variables. In the root of the project, create a `.env.local` file with your Supabase keys:
+    ```env
+    NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+    ```
 
-## Deploy on Vercel
+5.  Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Live Demo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can view a live deployment of this application here:
+[https://next-js-app-with-supabase-ba-git-d89bbe-navadeepreddys-projects.vercel.app]
+
+### Author
+
+[karukonda Navadeep Reddy]
+[https://navadeep9252.github.io/personal_portfolio/]
