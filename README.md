@@ -20,7 +20,7 @@ This project is a minimal, full-stack application designed to manage and track e
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git)
+    git clone [https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git](https://github.com/Navadeep9252/Next.js-app-with-Supabase-backend)
     cd YOUR_REPO_NAME
     ```
 
